@@ -1,0 +1,1 @@
+concurrently "npx serve guides/" "node cron.js"

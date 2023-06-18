@@ -1,0 +1,5 @@
+services:
+  epg:
+    image: "iptvorgepgdocker:latest"
+    ports:
+      - "9000:3000"
