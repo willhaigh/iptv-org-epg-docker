@@ -8,13 +8,23 @@ const execute = () => {
       stdio: "inherit",
       cwd: "/usr/src/app",
     });
+  } catch (error) {
+    console.error(
+      "something went wront while grabbing epg from tvhebdo",
+      error
+    );
+  }
 
-    execSync("SITE=tvtv.us npm run grab", {
+  try {
+    execSync("SITE=tvpassport.com npm run grab", {
       stdio: "inherit",
       cwd: "/usr/src/app",
     });
   } catch (error) {
-    console.error("something went wront while grabbing epg", error);
+    console.error(
+      "something went wront while grabbing epg from tvpassport",
+      error
+    );
   }
 };
 
