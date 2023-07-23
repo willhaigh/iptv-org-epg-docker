@@ -3,7 +3,7 @@ FROM --platform=linux/amd64 node:18
 # Create app directory
 WORKDIR /usr/src/app
 
-RUN git clone --depth 1 -b tva-tv-passport git@github.com:jimmyfortinx/epg.git .
+RUN git clone --depth 1 -b master https://github.com/iptv-org/epg.git .
 
 RUN npm install -g concurrently
 RUN npm install
