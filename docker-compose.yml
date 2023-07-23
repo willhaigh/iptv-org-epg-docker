@@ -1,5 +1,5 @@
 services:
   epg:
-    image: "iptv-epg:latest"
+    image: "haighy23/iptv-epg:latest"
     ports:
       - "9000:3000"
