@@ -4,7 +4,7 @@ var cron = require("node-cron");
 const execute = () => {
   console.log("Grabbing epg...");
   try {
-    execSync("SITE=tvhebdo.com npm run grab", {
+    execSync("SITE=foxtel.com.au npm run grab", {
       stdio: "inherit",
       cwd: "/usr/src/app",
     });
@@ -16,7 +16,7 @@ const execute = () => {
   }
 
   try {
-    execSync("SITE=tvpassport.com npm run grab", {
+    execSync("SITE=foxtel.com.au npm run grab", {
       stdio: "inherit",
       cwd: "/usr/src/app",
     });
